@@ -26,6 +26,7 @@ class Metaphone {
 		//std::stringstream result;
 		int currentPosition;
 		bool bhadMatches;
+		bool hadMatches();
 		//std::string str_currentMatch;
 
 		/*
@@ -39,7 +40,6 @@ class Metaphone {
 		void keep(std::string patterns);
 		template <class T>
 		std::string join(std::string separator, std::initializer_list<T> elements);
-		bool hadMatches();
 		std::string currentMatch();
 		bool matches(std::string pattern, std::string s);
 		void lookAhead(std::string pattern);
@@ -51,8 +51,9 @@ class Metaphone {
 		void removeMultiples(std::string... letters);
 		void addSpaceToBorders();
 		void allLowerCase();
-		void allUpperCase(std::string s);
-		*/
+        */
+		void allUpperCase();
+		
 		void allLowerCase();
 	public:
 	  Metaphone(std::string string);

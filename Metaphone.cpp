@@ -26,6 +26,10 @@ void Metaphone::allUpperCase() {
   std::transform(transformed.begin(), transformed.end(), transformed.begin(), ::tolower);
 
 }
+
+bool Metaphone::hadMatches() {
+	return bhadMatches;
+}
 /*
 void Metaphone::calculate() {
         if (isBlank()) return;
